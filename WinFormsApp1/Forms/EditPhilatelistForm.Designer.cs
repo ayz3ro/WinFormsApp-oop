@@ -30,6 +30,7 @@ namespace WinFormsApp1.Forms
             // 
             txtPhilName.Location = new Point(20, 40);
             txtPhilName.Size = new Size(130, 23);
+            txtPhilName.MaxLength = 50;
             txtPhilName.PlaceholderText = "Ім'я";
             txtPhilName.Name = "txtPhilName";
             //
@@ -37,6 +38,7 @@ namespace WinFormsApp1.Forms
             //
             txtPhilCountry.Location = new Point(155, 40);
             txtPhilCountry.Size = new Size(110, 23);
+            txtPhilCountry.MaxLength = 15;
             txtPhilCountry.PlaceholderText = "Країна";
             txtPhilCountry.Name = "txtPhilCountry";
             // 
@@ -44,6 +46,7 @@ namespace WinFormsApp1.Forms
             // 
             txtPhilContact.Location = new Point(270, 40);
             txtPhilContact.Size = new Size(140, 23);
+            txtPhilContact.MaxLength = 10;
             txtPhilContact.PlaceholderText = "Номер";
             txtPhilContact.Name = "txtPhilContact";
             // 
@@ -51,6 +54,7 @@ namespace WinFormsApp1.Forms
             // 
             txtPhilRareStamps.Location = new Point(415, 40);
             txtPhilRareStamps.Size = new Size(115, 23);
+            txtPhilRareStamps.MaxLength = 4;
             txtPhilRareStamps.PlaceholderText = "Рідкісні марки";
             txtPhilRareStamps.Name = "txtPhilRareStamps";
             // 
@@ -58,6 +62,7 @@ namespace WinFormsApp1.Forms
             // 
             txtPhilCollection.Location = new Point(20, 70);
             txtPhilCollection.Size = new Size(250, 23);
+            txtPhilCollection.MaxLength = 250;
             txtPhilCollection.PlaceholderText = "Власна колекція";
             txtPhilCollection.Name = "txtPhilCollection";
             //

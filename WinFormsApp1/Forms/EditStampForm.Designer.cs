@@ -30,6 +30,7 @@ namespace WinFormsApp1.Forms
             // 
             txtStampName.Location = new Point(20, 40);
             txtStampName.Name = "txtStampName";
+            txtStampName.MaxLength = 100;
             txtStampName.PlaceholderText = "Назва";
             txtStampName.Size = new Size(150, 23);
             txtStampName.TabIndex = 0;
@@ -38,6 +39,7 @@ namespace WinFormsApp1.Forms
             // 
             txtStampCountry.Location = new Point(180, 40);
             txtStampCountry.Name = "txtStampCountry";
+            txtStampCountry.MaxLength = 15;
             txtStampCountry.PlaceholderText = "Країна";
             txtStampCountry.Size = new Size(100, 23);
             txtStampCountry.TabIndex = 1;
@@ -47,6 +49,7 @@ namespace WinFormsApp1.Forms
             txtStampNominalValue.Location = new Point(290, 40);
             txtStampNominalValue.Name = "txtStampNominalValue";
             txtStampNominalValue.PlaceholderText = "Вартість";
+            txtStampNominalValue.MaxLength = 10;
             txtStampNominalValue.Size = new Size(80, 23);
             txtStampNominalValue.TabIndex = 2;
             // 
@@ -54,6 +57,7 @@ namespace WinFormsApp1.Forms
             // 
             txtStampYear.Location = new Point(380, 40);
             txtStampYear.Name = "txtStampYear";
+            txtStampYear.MaxLength = 4;
             txtStampYear.PlaceholderText = "Рік";
             txtStampYear.Size = new Size(60, 23);
             txtStampYear.TabIndex = 3;
@@ -63,6 +67,7 @@ namespace WinFormsApp1.Forms
             txtStampCirculation.Location = new Point(450, 40);
             txtStampCirculation.Name = "txtStampCirculation";
             txtStampCirculation.PlaceholderText = "Тираж";
+            txtStampCirculation.MaxLength = 10;
             txtStampCirculation.Size = new Size(80, 23);
             txtStampCirculation.TabIndex = 4;
             // 
@@ -70,6 +75,7 @@ namespace WinFormsApp1.Forms
             // 
             txtStampFeature.Location = new Point(20, 70);
             txtStampFeature.Name = "txtStampFeature";
+            txtStampFeature.MaxLength = 250;
             txtStampFeature.PlaceholderText = "Особливості";
             txtStampFeature.Size = new Size(250, 23);
             txtStampFeature.TabIndex = 5;

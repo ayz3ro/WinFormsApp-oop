@@ -54,6 +54,7 @@
             // 
             txtStampName.Location = new Point(20, 40);
             txtStampName.Name = "txtStampName";
+            txtStampName.MaxLength = 100;
             txtStampName.PlaceholderText = "Назва";
             txtStampName.Size = new Size(150, 23);
             txtStampName.TabIndex = 1;
@@ -62,6 +63,7 @@
             // 
             txtStampCountry.Location = new Point(180, 40);
             txtStampCountry.Name = "txtStampCountry";
+            txtStampCountry.MaxLength = 15;
             txtStampCountry.PlaceholderText = "Країна";
             txtStampCountry.Size = new Size(100, 23);
             txtStampCountry.TabIndex = 2;
@@ -71,6 +73,7 @@
             txtStampNominalValue.Location = new Point(290, 40);
             txtStampNominalValue.Name = "txtStampNominalValue";
             txtStampNominalValue.PlaceholderText = "Вартість";
+            txtStampNominalValue.MaxLength = 10;
             txtStampNominalValue.Size = new Size(80, 23);
             txtStampNominalValue.TabIndex = 3;
             // 
@@ -79,6 +82,7 @@
             txtStampYear.Location = new Point(380, 40);
             txtStampYear.Name = "txtStampYear";
             txtStampYear.PlaceholderText = "Рік";
+            txtStampYear.MaxLength = 4;
             txtStampYear.Size = new Size(60, 23);
             txtStampYear.TabIndex = 4;
             // 
@@ -87,6 +91,7 @@
             txtStampCirculation.Location = new Point(450, 40);
             txtStampCirculation.Name = "txtStampCirculation";
             txtStampCirculation.PlaceholderText = "Тираж";
+            txtStampCirculation.MaxLength = 10;
             txtStampCirculation.Size = new Size(80, 23);
             txtStampCirculation.TabIndex = 5;
             // 
@@ -95,6 +100,7 @@
             txtStampFeature.Location = new Point(20, 70);
             txtStampFeature.Name = "txtStampFeature";
             txtStampFeature.PlaceholderText = "Особливості";
+            txtStampFeature.MaxLength = 250;
             txtStampFeature.Size = new Size(250, 23);
             txtStampFeature.TabIndex = 6;
             // 
@@ -102,6 +108,7 @@
             // 
             txtPhilName.Location = new Point(20, 110);
             txtPhilName.Name = "txtPhilName";
+            txtPhilName.MaxLength = 50;
             txtPhilName.PlaceholderText = "Ім'я";
             txtPhilName.Size = new Size(150, 23);
             txtPhilName.TabIndex = 8;
@@ -111,6 +118,7 @@
             txtPhilCountry.Location = new Point(180, 110);
             txtPhilCountry.Name = "txtPhilCountry";
             txtPhilCountry.PlaceholderText = "Країна";
+            txtPhilCountry.MaxLength = 15;
             txtPhilCountry.Size = new Size(120, 23);
             txtPhilCountry.TabIndex = 9;
             // 
@@ -119,6 +127,7 @@
             txtPhilContact.Location = new Point(310, 110);
             txtPhilContact.Name = "txtPhilContact";
             txtPhilContact.PlaceholderText = "Контактні координати";
+            txtPhilContact.MaxLength = 10;
             txtPhilContact.Size = new Size(150, 23);
             txtPhilContact.TabIndex = 10;
             // 
@@ -126,6 +135,7 @@
             // 
             txtPhilRareStamps.Location = new Point(20, 140);
             txtPhilRareStamps.Name = "txtPhilRareStamps";
+            txtPhilRareStamps.MaxLength = 4;
             txtPhilRareStamps.PlaceholderText = "Рідкісні марки (є/нема)";
             txtPhilRareStamps.Size = new Size(200, 23);
             txtPhilRareStamps.TabIndex = 11;

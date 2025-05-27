@@ -39,7 +39,7 @@ namespace WinFormsApp1.Forms
                     : decimal.Parse(txtStampNominalValue.Text.Trim());
                 int? year = string.IsNullOrWhiteSpace(txtStampYear.Text)
                     ? (int?)null
-                     : int.Parse(txtStampYear.Text.Trim());
+                    : int.Parse(txtStampYear.Text.Trim());
                 int? circulation = string.IsNullOrWhiteSpace(txtStampCirculation.Text)
                     ? (int?)null
                     : int.Parse(txtStampCirculation.Text.Trim());
@@ -48,6 +48,12 @@ namespace WinFormsApp1.Forms
                 if (string.IsNullOrWhiteSpace(name))
                 {
                     MessageBox.Show("Назва не може бути порожня.");
+                    return false;
+                }
+
+                if (year.HasValue && year.Value < 1000)
+                {
+                    MessageBox.Show("Рік не може бути меншим за 1000.");
                     return false;
                 }
 

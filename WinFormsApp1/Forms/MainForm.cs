@@ -35,9 +35,16 @@ namespace WinFormsApp1.Forms
                 feature: string.IsNullOrWhiteSpace(feature) ? null : feature
             );
 
-            foreach (var stamp in results)
+            if (results.Any())
             {
-                lstResults.Items.Add(stamp.ToString());
+                foreach (var stamp in results)
+                {
+                    lstResults.Items.Add(stamp.ToString());
+                }
+            }
+            else
+            {
+                lstResults.Items.Add("Марку не знайдено");
             }
         }
 
@@ -71,9 +78,16 @@ namespace WinFormsApp1.Forms
                 hasRareStamps: hasRareStamps
             );
 
-            foreach (var philatelist in results)
+            if (results.Any())
             {
-                lstResults.Items.Add(philatelist.ToString());
+                foreach (var philatelist in results)
+                {
+                    lstResults.Items.Add(philatelist.ToString());
+                }
+            }
+            else
+            {
+                lstResults.Items.Add("Філателіста не знайдено");
             }
         }
 
@@ -86,6 +100,16 @@ namespace WinFormsApp1.Forms
         {
             var form = new EditPhilatelistForm(philatelistCatalog);
             form.ShowDialog();
+        }
+
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                MessageBox.Show("Натиснуто F1!");
+                e.Handled = true; // Якщо не хочеш, щоб дія F1 (типу допомоги) виконувалась
+            }
         }
     }
 }
