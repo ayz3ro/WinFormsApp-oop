@@ -101,15 +101,5 @@ namespace WinFormsApp1.Forms
             var form = new EditPhilatelistForm(philatelistCatalog);
             form.ShowDialog();
         }
-
-
-        private void MainForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F1)
-            {
-                MessageBox.Show("Натиснуто F1!");
-                e.Handled = true; // Якщо не хочеш, щоб дія F1 (типу допомоги) виконувалась
-            }
-        }
     }
 }
